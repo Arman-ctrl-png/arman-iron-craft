@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact &amp; Get a Quote | Arman Iron Craft</title>
+  <meta name="description" content="Contact Arman Iron Craft or request a quote for iron gates,stairs, railings and grills, doors and custom metal work.">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+  <!-- SEO: replace [YOUR-DOMAIN] with your real website address when you publish -->
+  <link rel="canonical" href="https://[YOUR-DOMAIN]/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Arman Iron Craft">
+  <meta property="og:title" content="Contact &amp; Get a Quote | Arman Iron Craft">
+  <meta property="og:description" content="Contact Arman Iron Craft or request a quote for iron gates,stairs, railings and grills, doors and custom metal work.">
+  <meta property="og:url" content="https://[YOUR-DOMAIN]/contact.html">
+  <meta property="og:image" content="https://[YOUR-DOMAIN]/assets/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="theme-color" content="#16181b">
+
+  <!-- Fonts: Montserrat for headings, Inter for body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Order matters: base styles first, then responsive, then animations -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="logo" href="index.html" aria-label="Arman Iron Craft - Home">ARMAN <span>IRON CRAFT</span></a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav id="nav-menu" class="nav-menu" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="work.html">Our Work</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+        <a class="btn btn--primary nav-cta" href="contact.html">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="hero__label animate-up" style="--delay: 0ms">Get a quote</p>
+        <h1 class="page-hero__title animate-up" style="--delay: 100ms">Contact Arman Iron Craft</h1>
+        <p class="page-hero__text animate-up" style="--delay: 250ms">Call, message us on WhatsApp, or send your project details below.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+
+        <!-- ===== Contact details ===== -->
+        <aside class="contact-card">
+          <h2 class="contact-card__title">Contact details</h2>
+          <dl class="contact-list">
+            <div><dt>Proprietor</dt><dd>Sahabuddin</dd></div>
+            <div><dt>Phone</dt><dd data-text="phone">+91 98715 00745</dd></div>
+            <div><dt>WhatsApp</dt><dd data-text="whatsapp">[WHATSAPP NUMBER]</dd></div>
+            <div><dt>Address</dt><dd>Nala, Pillanji, near Thyagraj sport complex, South Extension I, Kotla Mubarakpur, New Delhi, Delhi 110003</dd></div>
+            <div><dt>Opening hours</dt><dd>OPEN ALL DAYS,
+9:00 AM - 6:00 PM</dd></div>
+          </dl>
+          <div class="contact-actions">
+            <a class="btn btn--dark" href="#" data-call>Call Now</a>
+            <a class="btn btn--whatsapp" href="#" data-whatsapp target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn btn--outline" href="#" data-directions target="_blank" rel="noopener">Get Directions</a>
+          </div>
+        </aside>
+
+        <!-- ===== Quote form ===== -->
+        <div>
+          <h2 class="section__title">Let's discuss your project</h2>
+          <p class="section__sub">Have a project in mind? Tell us what you need and we'll get back to you.</p>
+
+          <form id="quote-form" class="quote-form" novalidate>
+            <div class="field">
+              <label for="name">Full name <span aria-hidden="true">*</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+              <p class="field__error" id="name-error" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone number <span aria-hidden="true">*</span></label>
+              <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required aria-describedby="phone-error">
+              <p class="field__error" id="phone-error" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="service">Service required <span aria-hidden="true">*</span></label>
+              <select id="service" name="service" required aria-describedby="service-error">
+                <option value="">Select a service</option>
+                <option>Iron Gate</option>
+                <option>Stairs</option>
+                <option>Railings &amp; Grills</option>                <option>Iron Door</option>
+                <option>Custom Metal Work</option>
+                <option>Repair / Modification</option>
+                <option>Other</option>
+              </select>
+              <p class="field__error" id="service-error" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="details">Project details <span aria-hidden="true">*</span></label>
+              <textarea id="details" name="details" rows="5" required aria-describedby="details-error" placeholder="Size, design you like, where it will be used..."></textarea>
+              <p class="field__error" id="details-error" aria-live="polite"></p>
+            </div>
+
+            <button class="btn btn--primary quote-form__submit" type="submit">Request a Quote</button>
+          </form>
+
+          <div class="form-success" id="form-success" tabindex="-1" hidden>
+            <h3>Your details look good</h3>
+            <p>Tap the button below to open WhatsApp with your details filled in. You can also attach photos of your space or reference designs in the chat.</p>
+            <a class="btn btn--whatsapp" id="success-whatsapp" href="#" target="_blank" rel="noopener">Send on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Map placeholder ===== -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Find us</h2>
+        <!-- When you have the real location: Google Maps > Share > Embed a map > copy the iframe,
+             then paste it inside .map-box in place of the placeholder text. -->
+        <div class="img-box map-box" data-label="[GOOGLE MAPS EMBED GOES HERE]"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1829.464643067274!2d77.2164798250795!3d28.57568930854602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce34247014093%3A0xfbcdf71710664d8d!2sARMAN%20IRON%20CRAFT!5e0!3m2!1sen!2sin!4v1791120569001!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <p class="footer__logo">ARMAN <span>IRON CRAFT</span></p>
+        <p>Custom Iron &amp; Steel Fabrication</p>
+      </div>
+
+      <nav aria-label="Footer quick links">
+        <h2 class="footer__heading">Quick Links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="work.html">Our Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2 class="footer__heading">Services</h2>
+        <ul>
+          <li>Iron Gates</li>
+          <li>Stairs</li>
+         <li>Railings &amp; Grills</li>
+          <li>Iron Doors</li>
+          <li>Custom Fabrication</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="footer__heading">Contact</h2>
+        <ul>
+          <li>Sahabuddin</li>
+          <li data-text="phone">+91 98715 00745</li>
+          <li data-text="whatsapp">[WHATSAPP NUMBER]</li>
+          <li>Nala, Pillanji, near Thyagraj sport complex, South Extension I, Kotla Mubarakpur, New Delhi, Delhi 110003</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>&copy; 2026 Arman Iron Craft. All Rights Reserved.</p>
+      <p><a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="terms.html">Terms</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/navigation.js" defer></script>
+  <script src="js/form.js" defer></script>
+</body>
+</html>

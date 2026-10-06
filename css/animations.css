@@ -1,0 +1,83 @@
+/* =========================================================
+   ARMAN IRON CRAFT - animations.css
+   ========================================================= */
+
+/* Fade + slide up. Each element sets its own --delay in the HTML */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Image gently scales into place */
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(1.08); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.animate-up {
+  opacity: 0;
+  animation: fade-up 0.8s var(--ease) var(--delay, 0ms) forwards;
+}
+
+.hero__media {
+  animation: scale-in 1.1s var(--ease) 0.2s both;
+}
+
+/* If a visitor asked their device for less motion, switch animations off */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .animate-up { opacity: 1; }
+}
+
+/* =========================================================
+   SCROLL ANIMATIONS (classes are added by main.js)
+   ========================================================= */
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+}
+.reveal.is-visible { opacity: 1; transform: none; }
+
+/* "How it works": the orange line fills in as you scroll */
+.process--animated::after {
+  content: "";
+  position: absolute;
+  left: 1.25rem; top: 0; bottom: 0;
+  width: 2px;
+  background: var(--color-accent);
+  transform-origin: top;
+  transform: scaleY(var(--progress, 0));
+}
+/* Number circles start grey and turn orange when the line reaches them */
+.process--animated .process__num {
+  background: var(--color-surface);
+  border: 2px solid var(--color-line);
+  color: var(--color-muted);
+  transition: background-color 0.4s, color 0.4s, border-color 0.4s;
+}
+.process--animated .is-reached .process__num {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #14161a;
+}
+
+@media (min-width: 900px) {
+  /* On desktop the line runs sideways instead */
+  .process--animated::after {
+    left: 0; right: 0; bottom: auto; top: 1.25rem;
+    width: auto; height: 2px;
+    transform-origin: left;
+    transform: scaleX(var(--progress, 0));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; }
+}

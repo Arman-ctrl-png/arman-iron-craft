@@ -1,0 +1,113 @@
+/* =========================================================
+   ARMAN IRON CRAFT - responsive.css
+   Changes for bigger screens. "min-width" means:
+   "apply these rules when the screen is AT LEAST this wide".
+   ========================================================= */
+
+/* ---------- Large phones & small tablets (600px+) ---------- */
+@media (min-width: 600px) {
+  .hero__actions { grid-template-columns: 1fr 1fr; }
+  .footer__grid { grid-template-columns: 1fr 1fr; }
+  .footer__bottom { flex-direction: row; justify-content: space-between; }
+}
+
+/* ---------- Desktop navigation (900px+) ---------- */
+@media (min-width: 900px) {
+  .nav-toggle { display: none; }           /* hide hamburger */
+
+  /* Menu becomes a normal horizontal row */
+  .nav-menu {
+    position: static;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0;
+    background: none;
+    border: 0;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+  .nav-list { display: flex; gap: 1.75rem; }
+  .nav-list a { padding: 0.5rem 0; border: 0; }
+  .nav-cta { width: auto; margin: 0; min-height: 44px; padding-inline: 1.25rem; }
+
+  /* Hero: text left, image right */
+  .hero { padding: 5rem 0 6rem; }
+  .hero__inner { grid-template-columns: 1.05fr 1fr; align-items: center; gap: 3.5rem; }
+  .hero__media { aspect-ratio: 5 / 4; }
+
+  .footer__grid { grid-template-columns: 1.4fr 1fr 1fr 1.2fr; }
+}
+
+/* =========================================================
+   Homepage sections - larger screens
+   ========================================================= */
+@media (min-width: 600px) {
+  .trust__list { grid-template-columns: repeat(4, 1fr); }
+  .services-grid, .why-grid { grid-template-columns: 1fr 1fr; }
+  .cta__actions { grid-template-columns: 1fr 1fr; }
+}
+
+@media (min-width: 900px) {
+  .section { padding: 5rem 0; }
+  .about { grid-template-columns: 1fr 1.2fr; gap: 4rem; }
+  .services-grid, .why-grid { grid-template-columns: repeat(3, 1fr); }
+  .facts { grid-template-columns: repeat(4, 1fr); }
+
+  /* Process becomes horizontal */
+  .process { grid-template-columns: repeat(5, 1fr); gap: 1.5rem; }
+  .process::before { left: 0; right: 0; top: 1.25rem; bottom: auto; width: auto; height: 2px; }
+  .process li { padding: 3.5rem 0 0; }
+}
+
+/* Services page - larger screens */
+@media (min-width: 900px) {
+  .page-hero { padding: 5rem 0 4rem; }
+  .service-detail { grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; padding: 4rem 0; }
+  .service-detail:nth-child(even) .service-detail__img { order: 2; } /* zig-zag: image switches sides */
+}
+
+/* Our Work page - larger screens */
+@media (min-width: 500px) {
+  .gallery-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 900px) {
+  .gallery-grid { grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+  .lightbox { padding: 3rem 1.5rem 1.5rem; gap: 1.5rem; }
+  .lightbox__img { max-height: 78vh; }
+}
+
+/* Contact page - larger screens */
+@media (min-width: 900px) {
+  .contact-grid { grid-template-columns: 1fr 1.4fr; gap: 4rem; }
+  .contact-card { position: sticky; top: calc(var(--header-height) + 1.5rem); }
+  .map-box { aspect-ratio: 21 / 9; }
+}
+
+
+/* =========================================================
+   MOBILE POLISH (Stage 9)
+   ========================================================= */
+
+/* Desktop: lightbox arrows go back to the sides, menu never scrolls */
+@media (min-width: 900px) {
+  .lightbox {
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: "prev image next";
+  }
+  .nav-menu { max-height: none; overflow: visible; }
+}
+
+/* Touch screens have no real "hover", so skip hover movement (stops cards sticking after a tap) */
+@media (hover: none) {
+  .btn:hover, .service-card:hover, .whatsapp-float:hover { transform: none; }
+  .gallery-item:hover img { transform: none; }
+}
+
+/* Footer and work preview - larger screens */
+@media (min-width: 900px) {
+  .footer__grid > :first-child, .footer__grid > :last-child { grid-column: auto; }  /* back to 4 normal columns */
+  .work-preview { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+}

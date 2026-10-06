@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arman Iron Craft | Custom Iron &amp; Steel Fabrication</title>
+  <meta name="description"
+    content="Arman Iron Craft provides custom iron and steel fabrication including gates, grills, railings, doors and other metal work.">
+  <link rel="icon" href="assets/icons/favicon.svg?v=2" type="image/svg+xml">
+  <meta name="theme-color" content="#16181b">
+  <!-- SEO: replace [YOUR-DOMAIN] with your real website address when you publish -->
+  <link rel="canonical" href="https://[YOUR-DOMAIN]/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Arman Iron Craft">
+  <meta property="og:title" content="Arman Iron Craft | Custom Iron &amp; Steel Fabrication">
+  <meta property="og:description"
+    content="Arman Iron Craft provides custom iron and steel fabrication including gates, grills, railings, doors and other metal work.">
+  <meta property="og:url" content="https://[YOUR-DOMAIN]/">
+  <meta property="og:image" content="https://[YOUR-DOMAIN]/assets/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts: Montserrat for headings, Inter for body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Order matters: base styles first, then responsive, then animations -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="logo" href="index.html" aria-label="Arman Iron Craft - Home">ARMAN <span>IRON CRAFT</span></a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav id="nav-menu" class="nav-menu" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="work.html">Our Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn btn--primary nav-cta" href="contact.html">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__label animate-up" style="--delay: 0ms">Custom iron &amp; steel fabrication</p>
+          <h1 class="hero__title animate-up" style="--delay: 100ms">Strong work.<br>Built to last.</h1>
+          <p class="hero__text animate-up" style="--delay: 250ms">Custom iron and steel fabrication crafted with care,
+            precision and attention to detail.</p>
+
+          <div class="hero__actions animate-up" style="--delay: 400ms">
+            <a class="btn btn--primary" href="contact.html">Get a Quote</a>
+            <a class="btn btn--outline" href="work.html">View Our Work</a>
+          </div>
+          <div class="hero__actions hero__actions--contact animate-up" style="--delay: 500ms">
+            <a class="btn btn--dark" href="#" data-call>Call Now</a>
+            <a class="btn btn--whatsapp" href="#" data-whatsapp target="_blank" rel="noopener">WhatsApp Us</a>
+          </div>
+        </div>
+
+        <!-- Replace assets/images/hero.jpg with a real project photo -->
+        <div class="hero__media">
+          <img src="assets/images/hero.jpg" alt="Custom home made by Arman Iron Craft" width="1200"
+            height="900" fetchpriority="high" onerror="this.style.display='none'">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRUST BAR ============ -->
+    <section class="trust" aria-label="Why customers choose us">
+      <ul class="container trust__list">
+        <li>Custom Fabrication</li>
+        <li>Quality Workmanship</li>
+        <li>Made To Order</li>
+        <li>Personal Service</li>
+      </ul>
+    </section>
+
+    <!-- ============ ABOUT PREVIEW ============ -->
+    <section class="section">
+      <div class="container about">
+        <div class="img-box about__img" data-label="Add photo: assets/images/sahabuddin.jpg">
+          <img src="assets/images/sahabuddin.jpg" alt="Sahabuddin, proprietor of Arman Iron Craft" width="800"
+            height="800" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div>
+          <h2 class="section__title">About Arman Iron Craft</h2>
+          <p>Arman Iron Craft provides custom iron and steel fabrication for homes, shops and other spaces. From gates
+            and grills to railings and custom metal work, every project is made according to the customer's
+            requirements.</p>
+          <p class="about__owner"><span>Proprietor</span> Sahabuddin</p>
+          <a class="btn btn--outline" href="about.html">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">What we do</h2>
+          <p class="section__sub">Custom fabrication for practical, durable and great-looking results.</p>
+        </div>
+        <div class="services-grid">
+          <a class="service-card" href="services.html#gates">
+            <div class="img-box service-card__img" data-label="assets/images/services/gates.jpg"><img
+                src="assets/images/services/gates.jpg" alt="Custom iron gate" width="600" height="400" loading="lazy"
+                onerror="this.style.display='none'"></div>
+            <div class="service-card__body">
+              <h3>Iron Gates</h3>
+              <p>Custom-designed gates fabricated according to your space, requirements and preferred style.</p><span
+                class="service-card__more">Learn more &rarr;</span>
+            </div>
+          </a>
+          <a class="service-card" href="services.html#stairs">
+            <div class="img-box service-card__img" data-label="assets/images/services/stairs.jpg"><img
+                src="assets/images/services/stairs.jpg" alt="Staircase" width="600" height="400" loading="lazy"
+                onerror="this.style.display='none'"></div>
+            <div class="service-card__body">
+              <h3>Stairs</h3>
+              <p>Staircases fabricated in iron and steel, planned around your space and requirements.</p><span
+                class="service-card__more">Learn more &rarr;</span>
+            </div>
+          </a>
+          <a class="service-card" href="services.html#railings">
+            <div class="img-box service-card__img" data-label="assets/images/services/railings.jpg"><img
+                src="assets/images/services/railings.jpg" alt="Iron railing" width="600" height="400" loading="lazy"
+                onerror="this.style.display='none'"></div>
+            <div class="service-card__body">
+              <h3>Railings &amp; Grills</h3>
+              <p>Railings and grills fabricated for stairs, balconies, windows and other spaces, made to your measurements.</p><span
+                class="service-card__more">Learn more &rarr;</span>
+            </div>
+          </a>
+          <a class="service-card" href="services.html#doors">
+            <div class="img-box service-card__img" data-label="assets/images/services/doors.jpg"><img
+                src="assets/images/services/doors.jpg" alt="Iron door" width="600" height="400" loading="lazy"
+                onerror="this.style.display='none'"></div>
+            <div class="service-card__body">
+              <h3>Iron Doors</h3>
+              <p>Iron doors made to order, planned around your entrance and requirements.</p><span
+                class="service-card__more">Learn more &rarr;</span>
+            </div>
+          </a>
+          <a class="service-card" href="services.html#custom">
+            <div class="img-box service-card__img" data-label="assets/images/services/custom.jpg"><img
+                src="assets/images/services/custom.jpg" alt="Custom metal work" width="600" height="400" loading="lazy"
+                onerror="this.style.display='none'"></div>
+            <div class="service-card__body">
+              <h3>Custom Metal Work</h3>
+              <p>Have something specific in mind? Tell us what you need and we can discuss making it.</p><span
+                class="service-card__more">Learn more &rarr;</span>
+            </div>
+          </a>
+          <a class="service-card" href="services.html#repair">
+            <div class="img-box service-card__img" data-label="assets/images/services/repair.jpg"><img
+                src="assets/images/services/repair.jpg" alt="Iron repair work" width="600" height="400" loading="lazy"
+                onerror="this.style.display='none'"></div>
+            <div class="service-card__body">
+              <h3>Repair &amp; Modification</h3>
+              <p>Repair or modify existing iron work. Get in touch to discuss what needs to be done.</p><span
+                class="service-card__more">Learn more &rarr;</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <!-- ============ WHY CHOOSE US ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Why Arman Iron Craft?</h2>
+        </div>
+        <div class="why-grid">
+          <article class="why-card">
+            <h3>Custom Designs</h3>
+            <p>Every project can be planned around the customer's requirements.</p>
+          </article>
+          <article class="why-card">
+            <h3>Quality Workmanship</h3>
+            <p>Attention to fabrication, finishing and overall construction.</p>
+          </article>
+          <article class="why-card">
+            <h3>Made To Measure</h3>
+            <p>Work can be planned according to available space and requirements.</p>
+          </article>
+          <article class="why-card">
+            <h3>Personal Service</h3>
+            <p>Discuss your project directly and understand the requirements.</p>
+          </article>
+          <article class="why-card">
+            <h3>Practical Results</h3>
+            <p>Designed for everyday use and long-term practicality.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">How it works</h2>
+        </div>
+        <ol class="process">
+          <li><span class="process__num">1</span>
+            <h3>Discuss</h3>
+            <p>Tell us what you need.</p>
+          </li>
+          <li><span class="process__num">2</span>
+            <h3>Measure</h3>
+            <p>Understand the required dimensions and site requirements.</p>
+          </li>
+          <li><span class="process__num">3</span>
+            <h3>Plan</h3>
+            <p>Finalize the design, material and requirements.</p>
+          </li>
+          <li><span class="process__num">4</span>
+            <h3>Fabricate</h3>
+            <p>Your project is fabricated according to the agreed requirements.</p>
+          </li>
+          <li><span class="process__num">5</span>
+            <h3>Install</h3>
+            <p>Final installation and finishing is completed as applicable.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ WORK PREVIEW ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Our work</h2>
+          <p class="section__sub">Take a look at some of our completed work.</p>
+        </div>
+        <ul class="work-preview">
+          <li><a href="work.html" aria-label="See our work"><span class="img-box" data-label="gate-1.jpg"><img src="assets/images/gallery/gate-1.jpg" alt="Iron gate made by Arman Iron Craft" width="800" height="1000" loading="lazy"></span></a></li>
+          <li><a href="work.html" aria-label="See our work"><span class="img-box" data-label="door-1.jpg"><img src="assets/images/gallery/door-1.jpg" alt="Iron door made by Arman Iron Craft" width="800" height="1000" loading="lazy"></span></a></li>
+          <li><a href="work.html" aria-label="See our work"><span class="img-box" data-label="stair-1.jpg"><img src="assets/images/gallery/stair-1.jpg" alt="Staircase made by Arman Iron Craft" width="800" height="1000" loading="lazy"></span></a></li>
+          <li><a href="work.html" aria-label="See our work"><span class="img-box" data-label="railing-1.jpg"><img src="assets/images/gallery/railing-1.jpg" alt="Railing made by Arman Iron Craft" width="800" height="1000" loading="lazy"></span></a></li>
+          <li><a href="work.html" aria-label="See our work"><span class="img-box" data-label="custom-1.jpg"><img src="assets/images/gallery/custom-1.jpg" alt="Custom metal work by Arman Iron Craft" width="800" height="1000" loading="lazy"></span></a></li>
+          <li><a href="work.html" aria-label="See our work"><span class="img-box" data-label="gate-2.jpg"><img src="assets/images/gallery/gate-2.jpg" alt="Iron gate made by Arman Iron Craft" width="800" height="1000" loading="lazy"></span></a></li>
+        </ul>
+        <a class="btn btn--primary" href="work.html">View All Work</a>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+   <section class="section section--alt">
+      <div class="container faq">
+        <div class="section__head">
+          <h2 class="section__title">Frequently asked questions</h2>
+        </div>
+        <div class="faq__item">
+          <h3><button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-1" id="faq-q1">Do you
+              make custom designs?</button></h3>
+          <div class="faq__answer" id="faq-1" role="region" aria-labelledby="faq-q1">
+            <div>
+              <p>Yes. Work is made to order, so you can discuss the design and requirements you have in mind.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq__item">
+          <h3><button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-q2">Can I
+              request a quotation?</button></h3>
+          <div class="faq__answer" id="faq-2" role="region" aria-labelledby="faq-q2">
+            <div>
+              <p>Yes. Use the quote request on the Contact page, or message us on WhatsApp with your project details.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="faq__item">
+          <h3><button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-q3">Can
+              measurements be arranged?</button></h3>
+          <div class="faq__answer" id="faq-3" role="region" aria-labelledby="faq-q3">
+            <div>
+              <p>Measurements are part of planning a project. Get in touch to discuss how to arrange them.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq__item">
+          <h3><button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-q4">What
+              types of iron work do you provide?</button></h3>
+          <div class="faq__answer" id="faq-4" role="region" aria-labelledby="faq-q4">
+            <div>
+              <p>Iron gates,stairs, railings and grills, iron doors, custom metal work, and repair or modification work.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="faq__item">
+          <h3><button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-q5">How
+              can I contact Arman Iron Craft?</button></h3>
+          <div class="faq__answer" id="faq-5" role="region" aria-labelledby="faq-q5">
+            <div>
+             <p>Call or WhatsApp on +91 98715 00745 or +91 89202 12909, or visit the <a href="contact.html">Contact page</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUOTE CTA (full form is built in Stage 6) ============ -->
+    <section class="section cta">
+      <div class="container cta__inner">
+        <h2 class="section__title">Let's discuss your project</h2>
+        <p class="section__sub">Have a project in mind? Tell us what you need and we'll get back to you.</p>
+        <div class="cta__actions">
+          <a class="btn btn--primary" href="contact.html">Request a Quote</a>
+          <a class="btn btn--whatsapp" href="#" data-whatsapp target="_blank" rel="noopener">WhatsApp Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <p class="footer__logo">ARMAN <span>IRON CRAFT</span></p>
+        <p>Custom Iron &amp; Steel Fabrication</p>
+      </div>
+
+      <nav aria-label="Footer quick links">
+        <h2 class="footer__heading">Quick Links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="work.html">Our Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2 class="footer__heading">Services</h2>
+        <ul>
+          <li>Iron Gates</li>
+          <li>Stairs</li>
+         <li>Railings &amp; Grills</li>
+          <li>Iron Doors</li>
+          <li>Custom Fabrication</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="footer__heading">Contact</h2>
+        <ul>
+          <li>Sahabuddin</li>
+          <li data-text="phone">+919871500745</li>
+          <li data-text="whatsapp">918920212909</li>
+          <li>Nala, Pillanji, near Thyagraj sport complex, South Extension I, Kotla Mubarakpur, New Delhi, Delhi 110003</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>&copy; 2026 Arman Iron Craft. All Rights Reserved.</p>
+      <p><a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="terms.html">Terms</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/navigation.js" defer></script>
+</body>
+
+</html>
