@@ -758,3 +758,6 @@ body { overflow-x: clip; }                    /* safety net: never allow sideway
   z-index: 0;
 }
 .work-preview img { object-fit: contain; z-index: 1; }
+
+/* Make the outline button see-through (buttons get a grey background by default) */
+.btn--outline { background: transparent; }
