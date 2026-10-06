@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://[YOUR-DOMAIN]/sitemap.xml
+Sitemap: https://arman-ctrl-png.github.io/arman-iron-craft/sitemap.xml

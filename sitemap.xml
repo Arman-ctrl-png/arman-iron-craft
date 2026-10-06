@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://[YOUR-DOMAIN]/</loc></url>
-  <url><loc>https://[YOUR-DOMAIN]/about.html</loc></url>
-  <url><loc>https://[YOUR-DOMAIN]/services.html</loc></url>
-  <url><loc>https://[YOUR-DOMAIN]/work.html</loc></url>
-  <url><loc>https://[YOUR-DOMAIN]/contact.html</loc></url>
+  <url><loc>https://arman-ctrl-png.github.io/arman-iron-craft/</loc></url>
+  <url><loc>https://arman-ctrl-png.github.io/arman-iron-craft/about.html</loc></url>
+  <url><loc>https://arman-ctrl-png.github.io/arman-iron-craft/services.html</loc></url>
+  <url><loc>https://arman-ctrl-png.github.io/arman-iron-craft/work.html</loc></url>
+  <url><loc>https://arman-ctrl-png.github.io/arman-iron-craft/contact.html</loc></url>
 </urlset>
